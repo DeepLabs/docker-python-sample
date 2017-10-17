@@ -19,6 +19,7 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         s.wfile.write("</body></html>")
  
 if __name__ == '__main__':
+    c = MyHandler()
     HOST_NAME = "0.0.0.0"
     PORT_NUMBER = 3000
     server_class = BaseHTTPServer.HTTPServer
